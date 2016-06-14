@@ -2925,7 +2925,8 @@ group invalid "Invalid Functions"
 
 			void main ()
 			{
-				${POSITION_FRAG_COLOR} = vec4(1.0);
+				Foo var = func();
+				${POSITION_FRAG_COLOR} = vec4(var.f);
 			}
 		""
 	end
