@@ -71,15 +71,9 @@ uniform UBOData {
     float UBOBlue;
 };
 
-uniform UBOD {
-    float UBOR;
-    float UBOG;
-    float UBOB;
-};
-
 void main()
 {
-    oColor = vec4(UBORed * UBOR, UBOGreen * UBOG, UBOBlue * UBOB, 1.0);
+    oColor = vec4(UBORed, UBOGreen, UBOBlue, 1.0);
 }
 </script>
 <script id='fshadernamed' type='x-shader/x-fragment'>#version 300 es
